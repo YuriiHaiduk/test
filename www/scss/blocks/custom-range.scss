@@ -12,7 +12,7 @@ $slider-handle-margin-top: -6px;
 $slider-track-height: 6px;
 $slider-track-border-radius: 4px;
 
-$slider-tick-width: 5px;
+$slider-tick-width: 0;
 $slider-tick-height: 5px;
 
 $container-width: 840px;
@@ -100,8 +100,6 @@ body {
   cursor: pointer;
   width: $slider-tick-width;
   height: $slider-tick-height;
-  //border-radius: 50%;
-  //background-color: $light-teal;
   position: relative;
   bottom:8px;
   .tick-value {
@@ -109,22 +107,29 @@ body {
     font-size: 12px;
     color: #2e211c;
     font-weight: 600;
-    //position: absolute;
-    //bottom: -0.5em;
-    //right: 0;
-    //left: -1em;
     background-color: $white;
     width:33%;
     display: flex;
+    position: relative;
+
+    &::before{
+      content:'';
+      width: 1px;
+      height: 40px;
+      //ackground: red;b
+      border-left:1px dashed #ccc;
+      position: absolute;
+      left: -3px;
+      top: 27px;
+    }
 
   }
+  .tick-value:nth-child(3n)::before{
+      left:0;
+    }
 
-  //&:nth-last-child(1) {
-  //  width:70px;
-  //}
-  //&:nth-child(3){
-  //  width:150px;
-  //}
+
+
 }
 
 /*
