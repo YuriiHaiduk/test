@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Test</title>
+	<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+
+</head>
+
+<body>
+
+	<header class="header">
+	<div class="container">
+		<nav class="navbar">
+			<ul class="navbar__list">
+				<li class="navbar__item active"><a href="#">Личная информация</a></li>
+				<li class="navbar__item"><a href="#">Опыт</a></li>
+				<li class="navbar__item"><a href="#">JavaScript</a></li>
+				<li class="navbar__item"><a href="#">О себе</a></li>
+			</ul>
+		</nav>
+
+		<nav class="navbar navbar--mobile">
+		<div class="menu-icon">
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+		</div>
+		</nav>
+
+	</div>
+		<div class="mobile-menu">
+			<li class="mobile-menu__item active"><a href="#">Личная информация</a></li>
+			<li class="mobile-menu__item"><a href="#">Опыт</a></li>
+			<li class="mobile-menu__item"><a href="#">JavaScript</a></li>
+			<li class="mobile-menu__item"><a href="#">О себе</a></li>
+		</div>
+	</header>
+
+	<main>
+		<div class="profile-block">
+			<div class="profile-block__info container content-wrapper">
+				<h1 class="profile-block__title">Анкета</h1>
+				<div class="profile-block__group">
+					<img src="img/icon-info.png" alt="" class="profile-block__info-icon">
+					<div class="profile-block__subtitle">Личная информация</div>
+					<form class="formBox">
+						<div class="inputBox">
+							<label class="labelText">ФИО</label>
+							<input class="userInput" type="text" name="name" value="Гайдук Юрий Русланович">
+						</div>
+
+						<div class="container-select">
+							<select class="wide">
+								<option value="" data-display-text="Год рождения">Год рождения</option>
+								<option value="1997">1997</option>
+								<option value="1998" selected>1998</option>
+								<option value="1999">1999</option>
+								<option value="2000">2000</option>
+								<option value="2001">2001</option>
+								<option value="2002">2002</option>
+								<option value="2003">2003</option>
+								<option value="2004">2004</option>
+								<option value="2005">2005</option>
+								<option value="2006">2006</option>
+								<option value="2007">2007</option>
+								<option value="2008">2008</option>
+								<option value="2009">2009</option>
+								<option value="2010">2010</option>
+								<option value="2011">2011</option>
+								<option value="2012">2012</option>
+								<option value="2013">2013</option>
+								<option value="2014">2014</option>
+								<option value="2015">2015</option>
+								<option value="2016">2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+							</select>
+						</div>
+
+						<div class="inputBox">
+							<label class="labelText">Место проживания:</label>
+							<input class="userInput" type="text" name="name" value="Одесса">
+						</div>
+						<div class="inputBox">
+							<label class="labelText">Skype:</label>
+							<input class="userInput" type="text" name="name" value="live:e0107c845ca1cd4a">
+						</div>
+						<div class="inputBox">
+							<label class="labelText">E-mail:</label>
+							<input class="userInput" type="email" name="name" value="gaydukyuriy2@gmail.com">
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="block-experience container">
+			<img src="img/icon-experience.png" alt="" class="block-experience__icon">
+			<h2 class="block-experience__title">Расскажите о своем опыте</h2>
+			<div class="block-experience__checkbox-list">
+
+				<div class="form__checkbox"><input checked type="checkbox" id="var1"><label for="var1">БЭМ/OOCSS</label></div>
+				<div class="form__checkbox"><input checked type="checkbox"id="var2"><label for="var2">Верстаю семантично</label></div>
+				<div class="form__checkbox"><input checked type="checkbox"id="var3"><label for="var3">Webpack</label></div>
+
+				<div class="form__checkbox"><input checked type="checkbox" id="var4"><label for="var4">Stylus/LESS/SASS</label></div>
+				<div class="form__checkbox"><input  checked type="checkbox"id="var5"><label for="var5">ES2015/ES2016</label></div>
+				<div class="form__checkbox"><input checked type="checkbox"id="var6"><label for="var6">jQuery</label></div>
+
+				<div class="form__checkbox"><input checked type="checkbox" id="var7"><label for="var7">Работаю с SVG</label></div>
+				<div class="form__checkbox"><input checked type="checkbox"id="var8"><label for="var8">Gulp/GRUNT</label></div>
+				<div class="form__checkbox"><input checked type="checkbox"id="var9"><label for="var9">Ипользую Git</label></div>
+
+			</div>
+		</div>
+
+
+		<div class="block-js container content-wrapper">
+			<img src="img/icon-js.png" alt="" class="block-js__icon">
+			<h2 class="block-js__title">Уровень владения JavaScript</h2>
+
+
+			<div id="wrapper">
+				<div id="sliderContainer">
+					<div class="tick-slider">
+						<div class="tick-slider-background">
+							<div id="weightProgress" class="tick-slider-progress"></div>
+						</div>
+
+						<div id="weightTicks" class="tick-slider-tick-container"></div>
+						<input
+								id="weightSlider"
+								class="tick-slider-input"
+								type="range"
+								min="0"
+								max="3"
+								step="1"
+								value="0"
+						/>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="content-wrapper container block-about">
+			<img src="img/icon-about-2.png" alt="" class="block-about__icon">
+			<h2 class="block-about__title">Расскажите о себе</h2>
+			<p>Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас</p>
+
+			<div class="block-about__form">
+				<textarea name="" id="" cols="" rows="">Вакансия привлекла возможностью удалённой работы,роста и развития внутри компании.От работы ожидаю интересные задачи и возможность обучаться,развиваться и расти в профессиональном плане.
+				</textarea>
+				<input type="submit" value="Готово">
+			</div>
+		</div>
+	</main>
+
+	<footer>
+
+	</footer>
+
+<script src='js/jquery.min.js'></script>
+<script src='js/script.js'></script>
+
+</body>
+</html>

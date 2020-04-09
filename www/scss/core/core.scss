@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700&subset=cyrillic');
+*{
+  box-sizing: border-box;
+  list-style: none;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  max-width: 768px;
+  padding: 0 15px;
+  margin:0 auto;
+}
+.content-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  paddding-top:20px;
+
+  h2{
+    display: block;
+    text-align: center;
+    margin-top:23px;
+    margin-bottom: 52px;
+    font-size: 30px;
+    color: rgb(28, 28, 28);
+    font-weight: 400;
+  }
+}
+
+@font-face
+{
+  font-family: 'Myriad Pro';
+  src: url('../../MyriadPro-Regular.ttf');
+  src: local('../../Myriad Pro'), local('TrajanPro'),
+  url('../../MyriadPro-Regular.ttf') format('opentype');
+}
