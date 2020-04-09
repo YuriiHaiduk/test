@@ -127,7 +127,7 @@ window.addEventListener('resize', setTicks);
 
 
 function setTicks(slider) {
-    const positions = ["Не владею", "Использую готовыерешения", "Использую&nbsp;готовые&nbsp;решения и&nbsp;умею&nbsp;&nbsp;переделывать", "Пишу сложный JS с нуля"];
+    const positions = ["Не владею", "Использую&nbsp;готовые решения", "Использую&nbsp;готовые&nbsp;решения и&nbsp;умею&nbsp;&nbsp;переделывать", "Пишу сложный JS с нуля"];
     const positions1 = ["0%","25%","75%","100%"];
     var container = document.getElementById("weightTicks");
     container.innerHTML = '';
