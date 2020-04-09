@@ -33,7 +33,6 @@ $RECYCLE.BIN/
 
 # Убрана папка node_module и файлы Gulp
 node_modules
-build
 .bowerrc
 package-lock.json
 
