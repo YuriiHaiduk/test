@@ -1,4 +1,4 @@
-//custom select
+//custom select function
 
 function create_custom_dropdowns() {
     $('select').each(function(i, select) {
